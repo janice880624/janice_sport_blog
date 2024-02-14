@@ -20,5 +20,5 @@ def rename_photos(directory, prefix):
 
 # 使用範例
 directory_path = '/Users/janice/Desktop/janice_sport_blog/blog/TRBB/pic/0208'
-prefix = '0218-'
+prefix = '0208-'
 rename_photos(directory_path, prefix)
