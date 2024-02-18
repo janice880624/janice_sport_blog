@@ -72,15 +72,34 @@
 	    </section>
 
 			<section class="category-options py-4">
-        <div class="container text-center">
-					<button id="showAll" class="btn btn-primary">全部</button>
-					<button id="showBig" class="btn btn-primary">大團練</button>
-					<button id="showSwim" class="btn btn-primary">游泳團練</button>
-					<button id="showBicycle" class="btn btn-primary">腳踏車團練</button>
-					<button id="showRun" class="btn btn-primary">跑步團練</button>
-					<button id="showChange" class="btn btn-primary">轉換跑</button>
-        </div>
-    	</section>
+				<div class="container text-center">
+					<!-- 下拉菜单，仅在小屏幕上显示 -->
+					<div class="dropdown d-block d-md-none">
+						<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							顯示方式
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<button class="dropdown-item" id="showAllMobile">全部</button>
+							<button class="dropdown-item" id="showBigMobile">大團練</button>
+							<button class="dropdown-item" id="showSwimMobile">游泳團練</button>
+							<button class="dropdown-item" id="showBicycleMobile">腳踏車團練</button>
+							<button class="dropdown-item" id="showRunMobile">跑步團練</button>
+							<button class="dropdown-item" id="showChangeMobile">轉換跑</button>
+						</div>
+					</div>
+					<!-- 原始按钮组，仅在中等屏幕以上显示 -->
+					<div class="d-none d-md-block">
+						<button id="showAll" class="btn btn-primary">全部</button>
+						<button id="showBig" class="btn btn-primary">大團練</button>
+						<button id="showSwim" class="btn btn-primary">游泳團練</button>
+						<button id="showBicycle" class="btn btn-primary">腳踏車團練</button>
+						<button id="showRun" class="btn btn-primary">跑步團練</button>
+						<button id="showChange" class="btn btn-primary">轉換跑</button>
+					</div>
+				</div>
+			</section>
+			
+			
 
 
 			<section class="blog-list px-3 py-5 p-md-5">
@@ -158,7 +177,7 @@
 						</div>
 
 						<!-- 0130 -->
-						<div class="card text-center m-2 item mb-5 change" style="flex: 0 0 15rem;"> 
+						<div class="card text-center m-2 item mb-5 swim" style="flex: 0 0 15rem;"> 
 							<img class="card-img-top" src="TRBB/pic/0130/0130-1.jpg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-title">0130 游泳團練 🏊‍♂️</h5>
@@ -168,7 +187,7 @@
 						</div>
 
 						<!-- 0125 -->
-						<div class="card text-center m-2 item mb-5 change" style="flex: 0 0 15rem;"> 
+						<div class="card text-center m-2 item mb-5 run" style="flex: 0 0 15rem;"> 
 							<img class="card-img-top" src="TRBB/pic/0125/0125-3.jpg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-title">0125 跑步團練 🏃‍♀️</h5>
@@ -178,7 +197,7 @@
 						</div>
 
 						<!-- 0123 -->
-						<div class="card text-center m-2 item mb-5 change" style="flex: 0 0 15rem;"> 
+						<div class="card text-center m-2 item mb-5 swim" style="flex: 0 0 15rem;"> 
 							<img class="card-img-top" src="TRBB/pic/0123/0123-1.jpeg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-title">0123 游泳團練 🏊‍♂️</h5>
@@ -191,14 +210,14 @@
 						<div class="card text-center m-2 item mb-5 change" style="flex: 0 0 15rem;"> 
 							<img class="card-img-top" src="TRBB/pic/0120/0120-1.JPG" alt="Card image cap">
 							<div class="card-body">
-								<h5 class="card-title">0120 觀山自行車➕轉換跑 🏃‍♀️</h5>
+								<h6 class="card-title">0120 觀山自行車➕轉換跑🏃‍♀️</h6>
 								<div class="meta mb-1"><span class="date"> 觀山</span><span class="date">轉換跑 </span></div>
 								<a href="TRBB/page/trbb0120.html" class="btn btn-primary">Read more &rarr;</a>
 							</div>
 						</div>
 
 						<!-- 0118 -->
-						<div class="card text-center m-2 item mb-5 change" style="flex: 0 0 15rem;"> 
+						<div class="card text-center m-2 item mb-5 run" style="flex: 0 0 15rem;"> 
 							<img class="card-img-top" src="TRBB/pic/0118/0118-2.jpeg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-title">0118 跑步團練 🏃‍♀️</h5>
@@ -208,7 +227,7 @@
 						</div>
 
 						<!-- 0116 -->
-						<div class="card text-center m-2 item mb-5 change" style="flex: 0 0 15rem;"> 
+						<div class="card text-center m-2 item mb-5 swim" style="flex: 0 0 15rem;"> 
 							<img class="card-img-top" src="TRBB/pic/0116/0116-1.jpeg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-title">0116 游泳團練 🏊‍♂️</h5>
@@ -218,7 +237,7 @@
 						</div>
 
 						<!-- 0114 -->
-						<div class="card text-center m-2 item mb-5 change" style="flex: 0 0 15rem;"> 
+						<div class="card text-center m-2 item mb-5 big" style="flex: 0 0 15rem;"> 
 							<img class="card-img-top" src="TRBB/pic/0114/0114-23.jpeg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-title">一月大團練🏃‍♀️🏊‍♂️🚴‍♂️</h5>
@@ -231,14 +250,14 @@
 						<div class="card text-center m-2 item mb-5 change" style="flex: 0 0 15rem;"> 
 							<img class="card-img-top" src="TRBB/pic/0113/0113-2.JPG" alt="Card image cap">
 							<div class="card-body">
-								<h5 class="card-title">0113 觀山自行車➕轉換跑 🏃‍♀️</h5>
+								<h6 class="card-title">0113 觀山自行車➕轉換跑 🏃‍♀️</h6>
 								<div class="meta mb-1"><span class="date"> 觀山</span><span class="date">轉換跑 </span></div>
 								<a href="TRBB/page/trbb0113.html" class="btn btn-primary">Read more &rarr;</a>
 							</div>
 						</div>
 
 						<!-- 0111 -->
-						<div class="card text-center m-2 item mb-5 change" style="flex: 0 0 15rem;"> 
+						<div class="card text-center m-2 item mb-5 run" style="flex: 0 0 15rem;"> 
 							<img class="card-img-top" src="TRBB/pic/0111/0111-3.jpeg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-title">0111 跑步團練 🏃‍♀️</h5>
@@ -248,7 +267,7 @@
 						</div>
 
 						<!-- 0109 -->
-						<div class="card text-center m-2 item mb-5 change" style="flex: 0 0 15rem;"> 
+						<div class="card text-center m-2 item mb-5 swim" style="flex: 0 0 15rem;"> 
 							<img class="card-img-top" src="TRBB/pic/0109/0109-1.jpeg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-title">0109 游泳團練 🏊‍♂️</h5>
@@ -258,7 +277,7 @@
 						</div>
 
 						<!-- 0102 -->
-						<div class="card text-center m-2 item mb-5 change" style="flex: 0 0 15rem;"> 
+						<div class="card text-center m-2 item mb-5 swim" style="flex: 0 0 15rem;"> 
 							<img class="card-img-top" src="TRBB/pic/0102/0102-3.jpeg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-title">0102 游泳團練 🏊‍♂️</h5>
