@@ -21,45 +21,23 @@
 		<script defer src="../../../assets/fontawesome/js/all.min.js"></script>
     
     <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="../../../assets/css/theme-1.css">
+    <link id="theme-style" rel="stylesheet" href="../../../assets/css/theme-4.css.css">
     
 
 </head>
 <body>
     
-    <header class="header text-center">	    
-	    <h1 class="blog-name pt-lg-4 mb-0"><a class="no-text-decoration" href="../../../index.html"> Janice's Sport Blog </a></h1>
-        
-	    <nav class="navbar navbar-expand-lg navbar-dark" >
-           
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+	<div id="header-placeholder"></div>
 
-			<div id="navigation" class="collapse navbar-collapse flex-column" >
-				<div class="profile-section pt-3 pt-lg-0">
-				    <img class="profile-image mb-3 rounded-circle mx-auto" src="../../../assets/img/logo3.png" alt="image" >			
-					
-					<div class="bio mb-3">Hi, my name is Janice. I like sports and recently started doing triathlons🏃‍♀️🏊‍♂️🚴‍♂️. You can also provide a link to the about page.<br><a href="../index.html">Find out more about me</a></div><!--//bio-->
-					<ul class="social-list list-inline py-3 mx-auto">
-			            <li class="list-inline-item"><a href="https://www.strava.com/athletes/110578336"><i class="fa-brands fa-strava"></i></a></li>
-			            <li class="list-inline-item"><a href="https://www.facebook.com/shangchen.kuo/"><i class="fa-brands fa-facebook"></i></a></li>
-			            <li class="list-inline-item"><a href="https://instagram.com/kuoshangchen?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a></li>
-			        </ul><!--//social-list-->
-			        <hr> 
-				</div><!--//profile-section-->
-				
-				<ul class="navbar-nav flex-column">
-					<li class="nav-item">
-					    <a class="nav-link active" href="../../trbb_main.html"><i class="fa-solid fa-person-running"></i> TRBB <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-					    <a class="nav-link" href="../../tkd_main.html"><i class="fa-solid fa-medal"></i></i> Taekwondo </a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-    </header>
+	<script>
+	document.addEventListener('DOMContentLoaded', function() {
+			fetch('trbb_header.html')
+					.then(response => response.text())
+					.then(data => {
+							document.getElementById('header-placeholder').innerHTML = data;
+					});
+	});
+	</script>
     
     <div class="main-wrapper">
 	    
