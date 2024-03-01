@@ -19,6 +19,7 @@ def rename_photos(directory, prefix):
         print(f"Renamed '{photo}' to '{new_name}'")
 
 # 使用範例
-directory_path = '/Users/janice/Desktop/janice_sport_blog/blog/other/pic/0218'
-prefix = '0218-'
+# directory_path = '/Users/janice/Desktop/janice_sport_blog/blog/other/pic/0218'
+directory_path = 'blog/TRBB/pic/0227'
+prefix = '0227-'
 rename_photos(directory_path, prefix)
