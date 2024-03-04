@@ -1,8 +1,6 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", function() {
-  // 當文檔加載完成後，設置按鈕的點擊事件
-
 
   document.getElementById('showAll').addEventListener('click', function() {
     var items = document.querySelectorAll('.item');
@@ -48,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   document.getElementById('showRun').addEventListener('click', function() {
-    // 顯示所有游泳類別的文章
     var items = document.querySelectorAll('.item');
     items.forEach(function(item) {
         if(item.classList.contains('run')) {
@@ -60,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   document.getElementById('showChange').addEventListener('click', function() {
-    // 顯示所有游泳類別的文章
     var items = document.querySelectorAll('.item');
     items.forEach(function(item) {
         if(item.classList.contains('change')) {
@@ -79,7 +75,6 @@ document.addEventListener("DOMContentLoaded", function() {
   }); 
 
   document.getElementById('showBigMobile').addEventListener('click', function() {
-      // 顯示所有游泳類別的文章
       var items = document.querySelectorAll('.item');
       items.forEach(function(item) {
           if(item.classList.contains('big')) {
@@ -91,7 +86,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   document.getElementById('showSwimMobile').addEventListener('click', function() {
-     // 顯示所有游泳類別的文章
       var items = document.querySelectorAll('.item');
       items.forEach(function(item) {
           if(item.classList.contains('swim')) {
@@ -103,7 +97,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   document.getElementById('showBicycleMobile').addEventListener('click', function() {
-    // 顯示所有游泳類別的文章
     var items = document.querySelectorAll('.item');
     items.forEach(function(item) {
         if(item.classList.contains('bicycle')) {
@@ -115,7 +108,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   document.getElementById('showRunMobile').addEventListener('click', function() {
-    // 顯示所有游泳類別的文章
     var items = document.querySelectorAll('.item');
     items.forEach(function(item) {
         if(item.classList.contains('run')) {
@@ -127,7 +119,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   document.getElementById('showChangeMobile').addEventListener('click', function() {
-    // 顯示所有游泳類別的文章
     var items = document.querySelectorAll('.item');
     items.forEach(function(item) {
         if(item.classList.contains('change')) {
