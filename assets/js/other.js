@@ -32,6 +32,17 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+  document.getElementById('showTri').addEventListener('click', function() {
+    var items = document.querySelectorAll('.item');
+    items.forEach(function(item) {
+        if(item.classList.contains('tri')) {
+            item.style.display = ''; // 或者 "block"，根據你的需要
+        } else {
+            item.style.display = 'none';
+        }
+    });
+  });
+
   document.getElementById('showAllMobile').addEventListener('click', function() {
     var items = document.querySelectorAll('.item');
     items.forEach(function(item) {
@@ -54,6 +65,17 @@ document.addEventListener("DOMContentLoaded", function() {
     var items = document.querySelectorAll('.item');
     items.forEach(function(item) {
         if(item.classList.contains('run')) {
+            item.style.display = ''; // 或者 "block"，根據你的需要
+        } else {
+            item.style.display = 'none';
+        }
+    });
+  });
+
+  document.getElementById('showTriMobile').addEventListener('click', function() {
+    var items = document.querySelectorAll('.item');
+    items.forEach(function(item) {
+        if(item.classList.contains('tri')) {
             item.style.display = ''; // 或者 "block"，根據你的需要
         } else {
             item.style.display = 'none';
