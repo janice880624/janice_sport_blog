@@ -8,7 +8,7 @@ def rename_photos(directory, prefix):
     # 排序檔案名稱，確保按照原有順序重新命名
     photos.sort()
     # 遍歷所有照片並重新命名
-    for index, photo in enumerate(photos, start=1):
+    for index, photo in enumerate(photos, start=23):
         # 建立新的文件名
         new_name = f"{prefix}{index}.jpg"
         # 建立原始和新的完整路徑
