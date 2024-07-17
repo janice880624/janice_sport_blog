@@ -9,6 +9,18 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }); 
 
+  document.getElementById('showSwim').addEventListener('click', function() {
+    // 顯示所有游泳類別的文章
+    var items = document.querySelectorAll('.item');
+    items.forEach(function(item) {
+        if(item.classList.contains('swim')) {
+            item.style.display = ''; // 或者 "block"，根據你的需要
+        } else {
+            item.style.display = 'none';
+        }
+    });
+  });
+
   document.getElementById('showBicycle').addEventListener('click', function() {
     // 顯示所有游泳類別的文章
     var items = document.querySelectorAll('.item');
@@ -54,6 +66,17 @@ document.addEventListener("DOMContentLoaded", function() {
     var items = document.querySelectorAll('.item');
     items.forEach(function(item) {
         if(item.classList.contains('bicycle')) {
+            item.style.display = ''; // 或者 "block"，根據你的需要
+        } else {
+            item.style.display = 'none';
+        }
+    });
+  });
+
+  document.getElementById('showSwimMobile').addEventListener('click', function() {
+    var items = document.querySelectorAll('.item');
+    items.forEach(function(item) {
+        if(item.classList.contains('swim')) {
             item.style.display = ''; // 或者 "block"，根據你的需要
         } else {
             item.style.display = 'none';
