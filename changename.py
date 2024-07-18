@@ -20,6 +20,6 @@ def rename_photos(directory, prefix):
 
 # 使用範例
 # directory_path = '/Users/janice/Desktop/janice_sport_blog/blog/other/pic/0615'
-directory_path = '/Users/janice/Desktop/janice_sport_blog/blog/TRBB/pic/0615'
-prefix = '0615-'
+directory_path = '/Users/janice/Desktop/janice_sport_blog/blog/TRBB/pic/0608'
+prefix = '0608-'
 rename_photos(directory_path, prefix)
